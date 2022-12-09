@@ -11,18 +11,19 @@ int main(){
 
     while (i!=0)
     {
+        if(i%2==0){
+            E++;
+        }else{
+            O++;
+        }
         cout << "Enter an integer: ";
         cin >> i;
-        if(i%2==0){
-            O++;
-        }else{
-            E++;
-        }
+        
     }
 
     
 
-    cout << "#Even numbers = " << E << "\n";
+    cout << "#Even numbers = " << E << "";
     cout << "#Odd numbers = " << O;
     return 0;
 }
